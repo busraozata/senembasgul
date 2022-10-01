@@ -12,6 +12,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>Senem Başgül</title>
 </head>
@@ -87,40 +91,38 @@
                                     <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Hakkımda</a>
+                                    <a class="nav-link" aria-current="page" href="about.html">Hakkımda</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
                                     <!--  -->
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside">Hizmetlerim</a>
+                                        data-bs-auto-close="outside">Yaptıklarım</a>
                                     <div class="dropdown-menu first-dropdown-menu shadow">
                                         <ul class="">
-                                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                            <li><a class="dropdown-item" href="social.html">Sosyal Yayınlar</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                <a class="dropdown-item" href="book.html">Kitaplarım</a>
                                             </li>
 
                                             <li>
-                                                <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                <a class="dropdown-item" href="bilimsel.html">Bilimsel Yayınlar</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="#">Lorem Ipsum</a>
+                                                <a class="dropdown-item" href="sunum.html">Sunumlar</a>
                                             </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">Lorem Ipsum</a>
-                                            </li>
+
                                         </ul>
                                     </div>
 
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">İletişim</a>
+                                    <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="contact.html">İletişim</a>
                                 </li>
                             </ul>
                         </div>
@@ -130,7 +132,7 @@
         </div>
     </header>
 
-    <section class="banner">
+    <!--     <section class="banner">
         <div class="swiper mySwiperBanner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"
@@ -159,7 +161,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    </section>
+    </section> -->
 
     <section class="about">
         <div class="container">
@@ -168,10 +170,21 @@
                     <div class="content">
                         <h5>ÇOCUKLAR İÇİN MUTLULUK</h5>
                         <h2>Elbette Bunu Biz Oluşturmalıyız</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt fugiat
-                            architecto labore quod nulla earum ipsam quasi dolorem maxime, debitis nisi repudiandae modi
-                            illo nostrum commodi nobis sed veniam voluptate! Sapiente consequuntur dolores, eveniet nisi
-                            cum obcaecati molestiae non.</p>
+                        <p>Evimize gelen iğneci teyzeye özendiğimde yanılmıyorsam üç yaşındaydım. Sonrasında hep doktor
+                            olmayı istedim. Önceleri çocuk cerrahı olmayı düşünmüştüm, zamanı geldiğinde çocuk
+                            psikiyatristi olmayı seçtim.
+
+                            Yıllar önce sevgili eşimle her yönüyle çocuğa hizmet eden bir merkez kurmayı hayal etmiştik.
+                            Bugün, bu hayalin ürünü olan Güneş Çocuk’un birçok aile ve çocuğa çözüm sunuyor olması çok
+                            gurur verici benim için.
+
+                            Çocuk, gelecek, umut, heyecan, coşku ve hareket demek.Çocuk, değişim demek. Çocuk, öğrenmek
+                            demek. Bunca yıldır, okuduklarımdan daha fazlasını başta kendi çocuklarım ve takibimdeki
+                            çocuklardan öğrendim. Her geçen gün de öğrenmeye devam ediyorum. Çocuklarla çalışırken genç
+                            kalabilmek ise bu mesleğin en güzel hediyesi sanırım bana. Bugünden geriye dönüp baktığımda,
+                            çok şanslı olduğumu düşünüyorum.
+
+                        </p>
                         <img src="./img/logo.png" class="img-fluid" alt="">
                     </div>
                 </div>
@@ -186,21 +199,26 @@
                             <div class="col-lg-7 left-area">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4">
-                                        <div class="box text-center">
-                                            <h2 data-max="140"></h2>
-                                            <span>MUTLU ÇOCUK</span>
+                                        <div
+                                            class="box text-center d-flex flex-column justify-content-center align-items-center">
+                                            <a href="https://gunescocuk.com/" class="link">gunescocuk.com</a>
+                                            <span>GÜNEŞ ÇOCUK</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <div class="box text-center">
-                                            <h2 data-max="7"></h2>
-                                            <span>YILLARIN DENEYİMİ</span>
+                                        <div
+                                            class="box text-center d-flex flex-column justify-content-center align-items-center">
+                                            <a href="https://gunescocukdernegi.org/"
+                                                class="link">gunescocukdernegi.org</a>
+                                            <span>GÜNEŞ DERNEĞİ</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4">
-                                        <div class="box text-center">
-                                            <h2 data-max="150"></h2>
-                                            <span>ÖZGÜRLÜK</span>
+                                        <div
+                                            class="box text-center d-flex flex-column justify-content-center align-items-center">
+                                            <a href="http://gunescocuksempozyumu.com/"
+                                                class="link">gunescocuksempozyumu.com</a>
+                                            <span>GÜNEŞ ÇOCUK SEMPOZYUMU</span>
                                         </div>
                                     </div>
                                 </div>
@@ -228,6 +246,277 @@
         </div>
     </section>
 
+    <section class="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex flex-column align-items-start">
+                        <h5>SOSYAL</h5>
+                        <h2>YAYINLAR</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/1036-2-495x400.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Yeşilay 1036
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/1035-kapak-845x684.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Yeşilay 1035
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/1034-kapak-845x684.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Yeşilay 1034
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/Resim-170-1k.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Boşanma
+                                    </h3>
+                                </a>
+                            </div>
+
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/Resimk.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Engelli Çocuk Ne İster
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="./img/Resim-201-1-516x705.jpeg" class="img-fluid" alt="">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-content-info">
+
+                                <a href="social-detail.html">
+                                    <h3 class="service-title">
+                                        Medyanın Çocukların Ruh Sağlığı...
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div class="service-arrow">
+                                <a href="social-detail.html" class="btn d-flex align-items-center">Detaylı Bilgi İçin <i
+                                        class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-start">
+                    <h5>SİZİN İÇİN</h5>
+                    <h2>KİTAPLARIM</h2>
+                </div>
+            </div>
+            <div class="swiper mySwiperBook">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/durtusellik.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a
+                                    href="https://www.bkmkitap.com/cocuklarda-durtusellik-475574?gclid=EAIaIQobChMIoui5kbKY6wIVDevtCh16aQ61EAMYASAAEgLbdvD_BwE">
+                                    <h5>Dürtüsellik</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/bilisseldavranisciterapi.jpeg" class="img-fluid"
+                                    alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a
+                                    href="https://pegem.net/akademi/3-49942-Evaluation-of-The-Peer-Helping-Program-Conducted-for-University-Adjustment-.aspx/Kitabevi/Rehberlik/Rehberlik/kitabevi/dosyalar/kitabevi/456517-Gecmisten-Gelecege-Bilissel-Davranisci-Terapi-kitabi.aspx">
+                                    <h5>Bilişsel Davranışçı Terapi</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/nobelyayin_com_16063.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a href="https://www.nobelyayin.com/kitap_16063.html">
+                                    <h5>Konu Çocuk</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/okuloncesi.jpg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a href="https://www.cogepder.org.tr/kitaplar">
+                                    <h5>Okul Öncesi</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/cocukveergen.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a href="https://www.cogepder.org.tr/kitaplar">
+                                    <h5>Çocuk ve Ergen Ruh Sağlığı ve Hastalıkları</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/oyun-doenemi-ruh-sagligi-ve-hastaliklari.jpeg" class="img-fluid"
+                                    alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a
+                                    href="https://www.nobelkitabevi.com.tr/cocuk-ve-ergen-psikiyatrisi/14201-oyun-doenemi-ruh-sagligi-ve-hastaliklari-9789944053891.html">
+                                    <h5>Oyun Dönemi Ruh Sağlığı ve Hastalıkları</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/ozurlusaglik.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a href="https://www.cogepder.org.tr/kitaplar">
+                                    <h5>Özürlü Sağlık Kurulu Raporu</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <div class="img-wrapper">
+                                <img src="./img/durtu-1.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                            </div>
+                            <div class="blog-content-area d-flex flex-column justify-content-end align-items-start">
+                                <a href="https://hayykitap.com/kitap/cocuklarda-durtusellik/">
+                                    <h5>Çocuklarda Dürtüsellik</h5>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="services">
         <div class="container">
             <div class="row">
@@ -245,11 +534,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Covid19
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Covid19
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -270,11 +559,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Erken Çocukluk Envanteri Çalışması
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Erken Çocukluk Envanteri Çalışması
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -295,11 +584,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Perantel
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Perantel
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -320,11 +609,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Covid19
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Covid19
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -345,11 +634,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Erken Çocukluk Envanteri Çalışması
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Erken Çocukluk Envanteri Çalışması
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -370,11 +659,11 @@
                         <div class="service-content">
                             <div class="service-content-info">
 
-                              <a href="">
-                                <h3 class="service-title">
-                                    Perantel
-                                </h3>
-                              </a>
+                                <a href="">
+                                    <h3 class="service-title">
+                                        Perantel
+                                    </h3>
+                                </a>
                             </div>
                             <p class="service-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, soluta sed. Impedit,
@@ -387,6 +676,166 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presentations">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-start">
+                    <h5>SİZİN İÇİN</h5>
+                    <h2>SUNUMLARIM</h2>
+                </div>
+            </div>
+            <div class="swiper mySwiperPresentations">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://www.slideshare.net/aziyeSenemBagl/g-pandemide-okul-reddi" target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/pandemiokul.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>Pandemi Özel Gereksinim Okula Gidememe</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://www.slideshare.net/aziyeSenemBagl/zel-gereksinimli-ocuklarda-ruh-sal"
+                                target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/Clipboard02.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>Özel Gereksinimli Çocuklarda Ruh Sağlığı</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://www.slideshare.net/aziyeSenemBagl/akran-zorbalii" target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/akran.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>Akran Zorbalığı</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://www.slideshare.net/aziyeSenemBagl/ocuk-ve-ergen-psikiyatristi-olmak"
+                                target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/cocpsiolmk.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>Çocuk ve Ergen Psikiyatristi olmak</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://senembasgul.com.tr/sunum/escap%20senem%20basgul%203.pptx" target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/escap17.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>ESCAP 2017</h6>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                            <a href="https://senembasgul.com.tr/wp-content/uploads/2020/08/Saziye-Senem-Basgul-Down-Syndrome-Presentation-.pptx"
+                                target="_blank">
+                                <div class="img-wrapper">
+                                    <img src="./img/heavyrock.jpeg" class="img-fluid" alt="kumar bağımlılığı">
+                                </div>
+                                <div class="content">
+                                    <h6>Down Syndrome Presentation</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="media splide" class="" aria-labelledby="carousel-heading">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column align-items-start">
+                    <h2>MEDYA</h2>
+                </div>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="./video/WhatsApp-Video-2021-09-11-at-08.55.15.mp4" data-lity>
+                            <img src="./img/Ekran Resmi 2022-10-01 20.51.21.png" class="img-fluid"
+                                alt="Video Testimonial">
+                        </a>
+                        <h6>Çocuklar oyunla analiz ediliyor.</h6>
+                    </li>
+
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=becTK-KiYTE" data-lity>
+                            <img src="./img/dijital-705x388.jpeg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6>Akran Zorbalığı Bilal Eren ile</h6>
+                    </li>
+
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=DoRzTdwNaGw" data-lity>
+                            <img src="./img/pandemiliteratur-705x450.jpg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6> Pandemi Psikolojisi Literatür Değerlendirmesi</h6>
+                    </li>
+
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=becTK-KiYTE" data-lity>
+                            <img src="./img/downsend-2-705x436.jpeg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6>Gençlerle 4 çayı - Pandemi ve Ruh Sağlığımız</h6>
+                    </li>
+
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=d30JTMeDidU" data-lity>
+                            <img src="./img/sanaldunyadapedo.jpeg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6>Sanal Dünyada Pedofili</h6>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=kfPUXVbIG38" data-lity>
+                            <img src="./img/downsend-705x396.jpeg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6> Aile+1 Pandemi ve Ruh Sağlığımız</h6>
+                    </li>
+
+                    <li class="splide__slide">
+                        <a href="https://www.youtube.com/watch?v=xa427yGwTSM" data-lity>
+                            <img src="./img/engelsiz-705x450.jpeg" class="img-fluid" alt="Video Testimonial">
+                        </a>
+                        <h6>Engelsiz Yaşam Merkezi</h6>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -518,6 +967,71 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img-wrapper">
+                            <img src="./img/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, eos ipsum. Aliquid,
+                                itaque! Aut suscipit nemo libero fuga modi, aspernatur dolorem, sint explicabo aliquam
+                                nobis
+                                quod nisi minima excepturi sequi?</p>
+                        </div>
+                        <ul class="social-media d-flex justify-content-start align-items-center">
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div>
+                            <h5>LİNKLER</h5>
+                            <ul>
+                                <li><a href="">Lorem Ipsum</a></li>
+                                <li><a href="">Lorem Ipsum Dolor</a></li>
+                                <li><a href="">Lorem Ipsum</a></li>
+                                <li><a href="">Lorem Ipsum Dolor</a></li>
+                                <li><a href="">Lorem Ipsum Dolor Sit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="address">
+                            <h5>İLETİŞİM</h5>
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-envelope"></i>info@senembasgul.com.tr</a></li>
+                                <li><a href=""><i class="fa-solid fa-phone"></i>+90 530 134 90 88 </a></li>
+                                <p><i class="fa-sharp fa-solid fa-location-pin"></i>Kısıklı, Hanımseti Sok. No 12, 34692
+                                    Üsküdar/İstanbul</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <span>
+                    Copyright © 2022 Senem Başgül All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -528,6 +1042,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

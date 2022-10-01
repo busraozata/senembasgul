@@ -59,6 +59,71 @@ var swiperBlog = new Swiper(".mySwiperBlog", {
     },
 });
 
+var swiperBook = new Swiper(".mySwiperBook", {
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+        },
+    },
+});
+
+var mySwiperPresentations = new Swiper(".mySwiperPresentations", {
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+});
+
+
+var splide = new Splide(".splide", {
+    perPage: 2,
+    gap: "2rem",
+    breakpoints: {
+        640: {
+            perPage: 2,
+            gap: ".7rem",
+            height: "6rem"
+        },
+        480: {
+            perPage: 1,
+            gap: ".7rem",
+            height: "6rem"
+        }
+    }
+});
+
+splide.mount();
 
 function inVisible(element) {
     //Checking if the element is
